@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="254.0" prefWidth="410.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ru.sapteh.Controller.DeleteController">
+   <children>
+      <Button fx:id="deleteButton" layoutX="76.0" layoutY="200.0" mnemonicParsing="false" text="Delete" />
+      <Button fx:id="exitButton" layoutX="288.0" layoutY="200.0" mnemonicParsing="false" text="Exit" />
+      <TextField fx:id="deleteIdTextField" layoutX="131.0" layoutY="115.0" />
+      <Label layoutX="177.0" layoutY="98.0" text="Введите Id" />
+   </children>
+</AnchorPane>

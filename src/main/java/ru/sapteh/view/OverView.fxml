@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="402.0" prefWidth="748.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ru.sapteh.Controller.OverViewController">
+   <children>
+      <TabPane layoutX="-1.0" prefHeight="400.0" prefWidth="600.0">
+         <tabs>
+            <Tab text="User">
+               <content>
+                  <TableView fx:id="userTableView" prefHeight="371.0" prefWidth="592.0">
+                    <columns>
+                      <TableColumn fx:id="idColumn" prefWidth="75.0" text="id" />
+                      <TableColumn fx:id="lastNameColumn" prefWidth="75.0" text="Last Name" />
+                        <TableColumn fx:id="firstNameColumn" prefWidth="75.0" text="First Name" />
+                    </columns>
+                  </TableView>
+               </content>
+            </Tab>
+            <Tab text="Role">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TableView fx:id="tableViewRole" prefHeight="372.0" prefWidth="600.0">
+                          <columns>
+                            <TableColumn fx:id="ifColumnRole" prefWidth="75.0" text="id" />
+                            <TableColumn fx:id="nameRolesColumnRole" prefWidth="75.0" text="Name Roles" />
+                          </columns>
+                        </TableView>
+                     </children>
+                  </AnchorPane>
+              </content>
+            </Tab>
+            <Tab text="UserRole">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TableView fx:id="tableViewUserRole" prefHeight="373.0" prefWidth="600.0">
+                          <columns>
+                            <TableColumn fx:id="idColumnUserRole" prefWidth="75.0" text="id" />
+                            <TableColumn fx:id="registrationDateColumnUserRole" prefWidth="75.0" text="Registration Date" />
+                              <TableColumn fx:id="roleIdColumnUserRole" prefWidth="75.0" text="Role id" />
+                              <TableColumn fx:id="userIdColumnUserRole" prefWidth="75.0" text="User id" />
+                          </columns>
+                        </TableView>
+                     </children>
+                  </AnchorPane>
+              </content>
+            </Tab>
+         </tabs>
+      </TabPane>
+      <Button fx:id="newUserButton" layoutX="671.0" layoutY="274.0" mnemonicParsing="false" text="NewUser" />
+      <Button layoutX="671.0" layoutY="323.0" mnemonicParsing="false" text="Edit User" />
+      <Button fx:id="deleteButtonUser" layoutX="678.0" layoutY="376.0" mnemonicParsing="false" text="Delete" />
+      <Label fx:id="countRoleLabel" layoutX="649.0" layoutY="84.0" text="Count Role" />
+      <Label fx:id="dateRegistrationLabel" layoutX="633.0" layoutY="137.0" text="Date Registration" />
+   </children>
+</AnchorPane>
